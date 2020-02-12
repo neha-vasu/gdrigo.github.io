@@ -1,7 +1,7 @@
 header {
 	text-align: center;
-	/*font-family: 'Montserrat Subrayada', sans-serif;*/
-	font-family: 'Righteous', cursive;
+	font-family: 'Montserrat Subrayada', sans-serif;
+	/*font-family: 'Righteous', cursive;*/
 }
 .weekButton {
 	background-color: rgba(44, 130, 201, 1);
