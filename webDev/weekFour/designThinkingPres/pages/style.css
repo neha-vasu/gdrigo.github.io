@@ -1,0 +1,114 @@
+#bg {
+	width: 50px;
+}
+
+body {
+  background-color: black;
+  font-family: 'Staatliches', cursive;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.outerDiv {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  height: 50vw;
+}
+
+#homepagebg {
+	background-image: url("assets/WileyBackground.jpg");
+}
+
+.nameLabel {
+	margin-left: 7vw;
+	margin-top: 18vw;
+	padding-top: 3vw;
+	color: white;
+	text-align: center;
+	border: 10px solid black;
+	height: 12vw;
+	width: 50vw;
+	font-size: 120px;
+	font-family: 'Staatliches', cursive;
+	background-image: url("assets/flowerButtonBackgroundTinted.jpg")
+}
+
+.pageTitle {
+	margin-left: 18vw;
+	margin-top: 3vw;
+	padding-top: 0vw;
+	color: white;
+	text-align: center;
+	border: 10px solid black;
+	height: 4vw;
+	width: 25vw;
+	font-size: 60px;
+	font-family: 'Staatliches', cursive;
+	background-image: url("assets/flowerButtonBackgroundTinted.jpg")
+}
+
+.paintings {
+	margin-top: 1vw;
+	color: white;
+	text-align: center;
+	width: 60vw;
+}
+
+.painting {
+	margin-right: 2vw;
+	margin-left: 2vw;
+	height: 26.5vw;
+	border: 10px solid black;
+}
+
+.sideCols {
+	width: 15vw;
+	padding-top: 3vw;
+}
+
+.centerCol {
+	width: 70vw;
+}
+
+.info {
+	width: 50vw;
+	margin-left: 7vw;
+	margin-top: 2vw;
+	font-size: 25px;
+}
+
+.navButton {
+	display: block;
+	color: white;
+	text-align: center;
+	border: 10px solid black;
+	height: 4vw;
+	width: 15vw;
+	font-size: 30px;
+	font-family: 'Staatliches', cursive;
+	background-image: url("assets/flowerButtonBackgroundTinted.jpg")
+}
+
+
+a:link{
+    color:#FFFFFF;
+	text-decoration: none;
+}
+
+a:visited{
+    color:#FFFFFF;
+}
+
+a:hover {
+    transform: scale(1.5);
+}
+ul{ 
+	list-style-type: none; 
+}
+li {
+	padding-top: 1vw;
+}
