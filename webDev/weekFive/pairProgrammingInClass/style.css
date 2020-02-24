@@ -3,22 +3,22 @@ html {
 }
 header {
 	text-align: center;  
-  border: 10px solid brown;
+  /*border: 10px solid brown;*/
   width: 33vw;
   height: 7vw;
   margin-left: 34vw;
   margin-top: -0.5vw;
-  background-image: url("assets/woodPanel.png");
   margin-bottom: 3vw;
   font-size: 33px;
 }
 
 body {
-  background-image: url("assets/palmLeaves.png");
+  background-image: url("greenFelt.jpg");
 }
 
 .weekButton {
   background-image: url("assets/woodPanel.png");
+  background-repeat: no-repeat;
   font-family: 'Bowlby One SC';
 	border: 10px solid brown;
   width: 50vw;
@@ -30,6 +30,13 @@ body {
 
 }
 
-.weekButton:hover {
-  background-image: url("assets/woodPanelFruit.png");
+.board {
+  width: 70vw;
+  height: 60vh;
+  border: 10px solid black;
+  margin-left: 15vw;
+}
+
+.card {
+  width: 5vw;
 }
