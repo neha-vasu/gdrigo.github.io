@@ -3,7 +3,7 @@ html {
 }
 header {
 	text-align: center;  
-  border: 10px solid brown;
+  border: 10px solid #402000;
   width: 33vw;
   height: 7vw;
   margin-left: 34vw;
@@ -20,7 +20,7 @@ body {
 .weekButton {
   background-image: url("assets/woodPanel.png");
   font-family: 'Bowlby One SC';
-	border: 10px solid brown;
+	border: 10px solid #402000;
   width: 50vw;
   height: 8vw;
   margin-bottom: 1vw;
