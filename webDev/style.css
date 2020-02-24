@@ -1,17 +1,30 @@
-header {
-	text-align: center;
-	font-family: 'Montserrat Subrayada', sans-serif;
-	/*font-family: 'Righteous', cursive;*/
+html {
+  font-family: 'Bowlby One SC', ;
 }
+header {
+	text-align: center;  
+  border: 10px solid black;
+  width: 30vw;
+  height: 6vw;
+  margin-left: 34vw;
+  margin-top: -0.5vw;
+  background-image: url("assets/woodPanel.png");
+  margin-bottom: 3vw;
+  font-size: 35px;
+}
+
+body {
+  background-image: url("assets/palmLeaves.png");
+}
+
 .weekButton {
-	background-color: rgba(44, 130, 201, 1);
-	border: 0px solid rgba(255, 255, 255, .7);
-  	border-radius: 15px;
-  	width: 50vw;
-  	height: 6vw;
-  	margin-bottom: 2vw;
-  	margin-left: 25vw;
-  	color: white;
-  	box-shadow: 10px 10px;
+  background-image: url("assets/woodPanel.png");
+	border: 10px solid black;
+  width: 50vw;
+  height: 8vw;
+  margin-bottom: 1vw;
+  margin-left: 25vw;
+  color: black;
+  font-size: 60px;
 
 }
