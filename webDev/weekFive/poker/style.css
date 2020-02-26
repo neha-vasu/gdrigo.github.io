@@ -1,0 +1,73 @@
+html {
+  font-family: 'Bowlby One SC';
+}
+header {
+  text-align: center;  
+  width: 33vw;
+  height: 7vw;
+  margin-left: 34vw;
+  margin-top: -0.5vw;
+  margin-bottom: 3vw;
+  font-size: 2vw;
+}
+
+body {
+  background-image: url("woodFloor.png");
+  background-repeat: no-repeat;
+}
+
+.board {
+  background-image: url("greenFelt.jpg");
+  width: 70vw;
+  height: 60vh;
+  border: 10px solid black;
+  margin-left: 15vw;
+  margin-top: -30vh;
+  display: flex;
+}
+
+.card {
+  width: 4vw;
+  height: 6vw;      
+  position: relative;
+  display: inline-block;
+    }
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.card:hover .img-top {
+    display: inline;
+}
+
+
+.chips {
+  width: 7vw;
+  margin-left: 1vw;
+}
+
+.players {
+  margin-left: 23vw;
+  display: flex;
+}
+.player {
+  width: 8vw;
+  padding-right: 8vw;
+}
+
+.instructions {
+  background-color: white;
+  width: 14vw;
+  
+}
+
+.dealerAndStuff {
+  margin-top: -10vh;
+  margin-left: 45vw;
+}
+.dealer {
+  margin-top: -2vh;
+}
