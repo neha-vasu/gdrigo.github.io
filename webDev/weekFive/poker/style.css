@@ -12,12 +12,12 @@ header {
 }
 
 body {
-  background-image: url("woodFloor.png");
+  background-image: url("assets/woodFloor.png");
   background-repeat: no-repeat;
 }
 
 .board {
-  background-image: url("greenFelt.jpg");
+  background-image: url("assets/greenFelt.jpg");
   width: 70vw;
   height: 60vh;
   border: 10px solid black;
