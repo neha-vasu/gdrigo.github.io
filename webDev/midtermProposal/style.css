@@ -15,7 +15,6 @@ header {
 
 body {
   display: flex;
-  /*justify-content: space-around;*/*/
   background-image: url("assets/eye.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -24,7 +23,7 @@ body {
 
 .crate {
   width: 80vw;
-  font-size: 4vw;
+  font-size: 2vw;
   text-align: center;
   padding-left: 10vw;
   padding-top: 8vh;
