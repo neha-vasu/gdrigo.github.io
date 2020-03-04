@@ -66,6 +66,20 @@ body {
   
   margin-top: 5vh;
 }
+
+.tracks {
+  text-align: center;
+  margin-left: 33vw;
+  font-size: 30px;
+}
+
+.recordPlay {
+ padding-left: 10vw;
+}
+
+.dets {
+
+}
 .summary {
   width: 80vw;
   margin-top: -100vh;
