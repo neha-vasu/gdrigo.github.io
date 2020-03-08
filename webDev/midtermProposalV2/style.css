@@ -1,0 +1,82 @@
+html {
+  font-family: 'Bowlby One SC';
+}
+header {
+	text-align: center;  
+  border: 10px solid #402000;
+  width: 33vw;
+  height: 7vw;
+  margin-left: 34vw;
+  margin-top: -0.5vw;
+  background-image: url("assets/woodPanel.png");
+  margin-bottom: 3vw;
+  font-size: 33px;
+}
+
+body {
+  display: flex;
+  background-image: url("assets/eye.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+.crate {
+  width: 80vw;
+  font-size: 2vw;
+  text-align: center;
+  padding-left: 10vw;
+  padding-top: 8vh;
+  
+}
+
+.crate img{
+  width: 20vw;
+}
+
+.recordColl {
+  justify-content: space-between;
+  margin-left: 20vw;
+  margin-top: 5vh;
+
+}
+.recordColl img{
+  
+  width: 20vw;
+}
+
+.record {
+  text-align: center;
+}
+
+.record img{
+  width: 25vw;
+  margin-left: 35vw;
+  margin-top: 5vh;
+}
+
+.recordPlay {
+  margin-left: 25vw;
+}
+
+.recordPlay img{
+  width: 25vw;
+  
+  margin-top: 5vh;
+}
+
+.tracks {
+  text-align: center;
+  margin-left: 33vw;
+  font-size: 30px;
+}
+
+.recordPlay {
+ padding-left: 10vw;
+}
+
+.wf img{
+  width: 90vw;
+}
+
+
