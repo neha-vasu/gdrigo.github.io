@@ -1,5 +1,6 @@
 html {
-  font-family: 'Bowlby One SC';
+  /*font-family: 'Bowlby One SC';*/
+  font-family: 'Bungee', cursive;
 }
 header {
 	text-align: center;  
@@ -15,23 +16,110 @@ header {
 
 body {
   display: flex;
+  background-color: black;
   background-image: url("assets/eye.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
 }
 
-.crate {
-  width: 80vw;
+.albumTitle  {
+  color:white;
+  text-decoration: none;
+}
+
+a:link
+{
+  color:white;
+  text-decoration: none;
+}
+
+a:visited
+{
+  color:white;
+}
+
+a:hover 
+{
+  color: white; 
+}
+
+
+.tracks a:link
+{
+  color:grey;
+  text-decoration: none;
+}
+
+.tracks a:visited
+{
+  color:grey;
+}
+
+.tracks a:hover 
+{
+  color: white; 
+}
+
+.backgroundVid {
+  height: 100%;
+  width: 100%;
+  background-image: url("assets/deloreans");
+}
+
+.mainDisc {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
   font-size: 2vw;
   text-align: center;
-  padding-left: 10vw;
-  padding-top: 8vh;
   
+  margin-top: -55vh;
+  
+}
+
+#thingsimag {
+  font-style: 3vh;
+  color: white;
+}
+
+.lyrics {
+  color: white;
+  font-size: 8vh;
+  text-align: center;
+}
+
+
+.discGif {
+  
+  
+}
+
+.backButton {
+    position: fixed;
+    top: 0px;
+    left: 0px; 
+    border: 3px solid white;
 }
 
 .crate img{
   width: 20vw;
+}
+
+
+.recCover img {
+  width: 20vw;
+  z-index: 0;
+  padding: .1vw;
+  /*border: 5px solid white;*/
+}
+
+.recCover img:hover {
+  z-index: 1;
+  /*width: 25vw;*/
+  transition: all 1.5s;
+  transform: scale(1.3);
+  /*border: 10px solid white;*/
 }
 
 .recordColl {
@@ -41,18 +129,25 @@ body {
 
 }
 .recordColl img{
-  
   width: 20vw;
 }
 
-.record {
+.recordCovWithDisc {
+  display: block;
+  margin-left: 35vw;
   text-align: center;
+  font-size: 4vh;
+  /*text-align: center;*/
 }
 
-.record img{
-  width: 25vw;
-  margin-left: 35vw;
-  margin-top: 5vh;
+.recordCovWithDisc img{
+  width: 28vw;
+  /*margin-left: 35vw;*/
+ 
+}
+
+.underDisc {
+  margin-left: -10vw;
 }
 
 .recordPlay {
@@ -67,7 +162,7 @@ body {
 
 .tracks {
   text-align: center;
-  margin-left: 33vw;
+  margin-left: 28vw;
   font-size: 30px;
 }
 
