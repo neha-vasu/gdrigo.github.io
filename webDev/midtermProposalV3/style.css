@@ -1,0 +1,231 @@
+html {
+  /*font-family: 'Bowlby One SC';*/
+  font-family: 'Bungee', cursive;
+}
+header {
+	text-align: center;  
+  border: 10px solid #402000;
+  width: 33vw;
+  height: 7vw;
+  margin-left: 34vw;
+  margin-top: -0.5vw;
+  background-image: url("assets/woodPanel.png");
+  margin-bottom: 3vw;
+  font-size: 33px;
+}
+
+body {
+  display: flex;
+  background-color: black;
+  background-image: url("assets/eye.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+.albumTitle  {
+  color:white;
+  text-decoration: none;
+}
+
+a:link
+{
+  color:white;
+  text-decoration: none;
+}
+
+a:visited
+{
+  color:white;
+}
+
+a:hover 
+{
+  color: white; 
+}
+
+.tracks {
+  z-index: 2;
+}
+.tracks a:link
+{
+  color:grey;
+  text-decoration: none;
+}
+
+.tracks a:visited
+{
+  color:grey;
+}
+
+.tracks a:hover 
+{
+  color: white; 
+}
+
+.backgroundVid {
+  height: 100%;
+  width: 100%;
+  background-image: url("assets/deloreans");
+}
+
+.mainDisc {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  font-size: 2vw;
+  text-align: center;
+  
+  margin-top: -55vh;
+  
+}
+
+#thingsimag {
+  font-style: 3vh;
+  color: white;
+}
+
+.lyrics {
+  margin-top: -170vh;
+  text-decoration-style: flex;
+  width: 70vw;
+  /*text-align: center;*/
+  color: #8B4513;
+  font-size: 8vh;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+
+.discGif {
+  
+  
+}
+
+.backButton {
+    position: fixed;
+    top: 0px;
+    left: 0px; 
+    border: 3px solid white;
+    z-index: 3;
+}
+
+.crate img{
+  width: 20vw;
+}
+
+
+.recCover img {
+  width: 20vw;
+  z-index: 0;
+  padding: .1vw;
+  /*border: 5px solid white;*/
+}
+
+.recCover img:hover {
+  z-index: 1;
+  /*width: 25vw;*/
+  transition-duration: 1.5s;
+  /*transition: all 1.5s;*/
+  transform: scale(1.3);
+  /*border: 10px solid white;*/
+}
+
+.recordColl {
+  justify-content: space-between;
+  margin-left: 20vw;
+  margin-top: 5vh;
+
+}
+.recordColl img{
+  width: 20vw;
+}
+
+.recordCovWithDisc {
+    position: relative; 
+
+  display: block;
+  margin-left: 35vw;
+  text-align: center;
+  font-size: 4vh;
+  z-index: 2;
+  /*text-align: center;*/
+}
+
+.recordCovWithDisc img{
+  width: 28vw;
+  /*margin-left: 35vw;*/
+ 
+}
+
+.underDisc {
+  margin-left: -10vw;
+}
+
+.recordPlay {
+  margin-left: 25vw;
+}
+
+.recordPlay img{
+  width: 25vw;
+  
+  margin-top: 5vh;
+}
+
+.tracks {
+  text-align: center;
+  margin-left: 28vw;
+  font-size: 30px;
+}
+
+.recordPlay {
+ padding-left: 10vw;
+}
+
+.wf img{
+  width: 90vw;
+}
+
+#cars, #ifcar, #arret {
+  width: 28vw;
+  padding-bottom: 8vw;
+  opacity: 0.3;
+
+}
+
+#ifcar {
+  padding-left: 20vw;
+}
+
+#arret {
+/*  margin-top: -80vh;
+*/  padding-right: 29vw;
+}
+
+
+#wignhtmlMain {
+  position: relative; 
+  z-index: 1;
+}
+
+audio {
+  position: relative;
+  z-index: 1;
+
+}
+
+.pics {
+  z-index: 0;
+
+  /*padding-bottom: 10vh;*/
+  margin-top: -20vh;
+  /*position: relative;*/
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 30vw;
+}
+
+
+
+
