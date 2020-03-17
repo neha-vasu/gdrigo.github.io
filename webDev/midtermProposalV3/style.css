@@ -23,6 +23,15 @@ body {
   background-position: center; 
 }
 
+.homePage {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#mD {
+  width: 10px;
+}
 .albumTitle  {
   color:white;
   text-decoration: none;
@@ -74,7 +83,7 @@ a:hover
   justify-content: center;
   width: 90vw;
   font-size: 2vw;
-  text-align: center;
+  /*text-align: center;*/
   
   margin-top: -55vh;
   
