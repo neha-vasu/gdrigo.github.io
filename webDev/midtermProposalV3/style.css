@@ -1,115 +1,55 @@
 html {
-  /*font-family: 'Bowlby One SC';*/
-  font-family: 'Bungee', cursive;
+	font-family: 'Bungee', cursive;
 }
 header {
 	text-align: center;  
-  border: 10px solid #402000;
-  width: 33vw;
-  height: 7vw;
-  margin-left: 34vw;
-  margin-top: -0.5vw;
-  background-image: url("assets/woodPanel.png");
-  margin-bottom: 3vw;
-  font-size: 33px;
+	border: 10px solid #402000;
+	width: 33vw;
+	height: 7vw;
+	margin-left: 34vw;
+	margin-top: -0.5vw;
+	background-image: url("assets/woodPanel.png");
+	margin-bottom: 3vw;
+	font-size: 33px;
 }
 
 body {
-  display: flex;
-  background-color: black;
-  background-image: url("assets/eye.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; 
+	display: flex;
+	background-color: black;
+	/*background-image: url("assets/eye.png");*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
 }
 
+
+/*index.html begins*/
+
 .homePage {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
 }
 
 #mD {
-  width: 10px;
-}
-.albumTitle  {
-  color:white;
-  text-decoration: none;
-}
-
-a:link
-{
-  color:white;
-  text-decoration: none;
-}
-
-a:visited
-{
-  color:white;
-}
-
-a:hover 
-{
-  color: white; 
-}
-
-.tracks {
-  z-index: 2;
-}
-.tracks a:link
-{
-  color:grey;
-  text-decoration: none;
-}
-
-.tracks a:visited
-{
-  color:grey;
-}
-
-.tracks a:hover 
-{
-  color: white; 
-}
-
-.backgroundVid {
-  height: 100%;
-  width: 100%;
-  background-image: url("assets/deloreans");
+	/*width: 90vw;*/
 }
 
 .mainDisc {
-  display: flex;
-  justify-content: center;
-  width: 90vw;
-  font-size: 2vw;
-  /*text-align: center;*/
-  
-  margin-top: -55vh;
-  
-}
-
-#thingsimag {
-  font-style: 3vh;
-  color: white;
-}
-
-.lyrics {
-  margin-top: -170vh;
-  text-decoration-style: flex;
-  width: 70vw;
-  /*text-align: center;*/
-  color: #8B4513;
-  font-size: 8vh;
-  z-index: -1;
-  opacity: 0.2;
+	display: flex;
+	justify-content: center;
+	width: 80vw;
+	/*font-size: 2vw;*/
+	/*text-align: center;*/
+	/*margin-top: -55vh;*/
+	/*margin-top: -50%;*/
 }
 
 
-.discGif {
-  
-  
-}
+
+/*index.html ends*/
+
+/*recordlist.html begins*/
 
 .backButton {
     position: fixed;
@@ -118,92 +58,171 @@ a:hover
     border: 3px solid white;
     z-index: 3;
 }
-
-.crate img{
-  width: 20vw;
+.gridContainer {
+	display: grid;
+	grid-template-columns: 19vw 62vw 19vw;
 }
-
-
 .recCover img {
-  width: 20vw;
-  z-index: 0;
-  padding: .1vw;
-  /*border: 5px solid white;*/
+	width: 20vw;
+	z-index: 0;
+	padding: .1vw;
 }
 
 .recCover img:hover {
-  z-index: 1;
-  /*width: 25vw;*/
-  transition-duration: 1.5s;
-  /*transition: all 1.5s;*/
-  transform: scale(1.3);
-  /*border: 10px solid white;*/
+	z-index: 1;
+	transition-duration: 1.5s;
+	transform: scale(1.2);
 }
 
 .recordColl {
-  justify-content: space-between;
-  margin-left: 20vw;
-  margin-top: 5vh;
-
+	display: grid;
+	grid-template-columns: repeat(3, 20vw);
+	grid-template-rows: repeat(2, 20vw);
+	grid-gap: 1vw;
+	
 }
-.recordColl img{
-  width: 20vw;
-}
+/*grid knowledge: https://css-tricks.com/snippets/css/complete-guide-grid/*/
 
-.recordCovWithDisc {
-    position: relative; 
-
-  display: block;
-  margin-left: 35vw;
-  text-align: center;
-  font-size: 4vh;
-  z-index: 2;
-  /*text-align: center;*/
+.recordColl img {
+	width: 20vw;
 }
 
-.recordCovWithDisc img{
-  width: 28vw;
-  /*margin-left: 35vw;*/
- 
+/*.artistNameSpace, .albumNameSpace {
+	color: white;
+	writing-mode: vertical-rl;
+	text-orientation: sideways;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+	font-size: 5vw;
+}*/
+/* Link for text-orientation https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation*/
+
+/*recordlist.html ends*/
+
+
+
+.albumTitle  {
+	color:white;
+	text-decoration: none;
 }
 
-.underDisc {
-  margin-left: -10vw;
+a:link {
+	color:white;
+	text-decoration: none;
 }
 
-.recordPlay {
-  margin-left: 25vw;
+a:visited {
+	color:white;
 }
 
-.recordPlay img{
-  width: 25vw;
-  
-  margin-top: 5vh;
+a:hover {
+	color: white; 
 }
 
 .tracks {
-  text-align: center;
-  margin-left: 28vw;
-  font-size: 30px;
+	z-index: 2;
+}
+
+.tracks a:link {
+	color:grey;
+	text-decoration: none;
+}
+
+.tracks a:visited {
+	color:grey;
+}
+
+.tracks a:hover {
+	color: white; 
+}
+
+.backgroundVid {
+	height: 100%;
+	width: 100%;
+	background-image: url("assets/deloreans");
+}
+
+
+
+#thingsimag {
+	font-style: 3vh;
+	color: white;
+}
+
+.lyrics {
+	margin-top: -170vh;
+	text-decoration-style: flex;
+	width: 70vw;
+	/*text-align: center;*/
+	color: #8B4513;
+	font-size: 8vh;
+	z-index: -1;
+	opacity: 0.2;
+}
+
+
+
+
+
+
+.crate img{
+	width: 20vw;
+}
+
+
+
+
+.recordCovWithDisc {
+    position: relative; 
+    display: block;
+    margin-left: 35vw;
+    text-align: center;
+    font-size: 4vh;
+    z-index: 2;
+    /*text-align: center;*/
+}
+
+.recordCovWithDisc img{
+	width: 28vw;
+	/*margin-left: 35vw;*/
+}
+
+.underDisc {
+	margin-left: -10vw;
 }
 
 .recordPlay {
- padding-left: 10vw;
+	margin-left: 25vw;
 }
 
-.wf img{
-  width: 90vw;
+.recordPlay img{
+	width: 25vw;
+	margin-top: 5vh;
+}
+
+.tracks {
+	text-align: center;
+	margin-left: 28vw;
+	font-size: 30px;
+}
+
+.recordPlay {
+	padding-left: 10vw;
+}
+
+.wf img {
+	width: 90vw;
 }
 
 #cars, #ifcar, #arret {
-  width: 28vw;
-  padding-bottom: 8vw;
-  opacity: 0.3;
-
+	width: 28vw;
+	padding-bottom: 8vw;
+	opacity: 0.3;
 }
 
 #ifcar {
-  padding-left: 20vw;
+	padding-left: 20vw;
 }
 
 #arret {
@@ -213,27 +232,29 @@ a:hover
 
 
 #wignhtmlMain {
-  position: relative; 
-  z-index: 1;
+	position: relative; 
+	z-index: 1;
 }
 
 audio {
-  position: relative;
-  z-index: 1;
-
+	position: relative;
+	z-index: 1;
 }
 
 .pics {
-  z-index: 0;
-
-  /*padding-bottom: 10vh;*/
-  margin-top: -20vh;
-  /*position: relative;*/
-  width: 40vw;
-  display: flex;
-  justify-content: space-around;
-  padding-left: 30vw;
+	z-index: 0;
+	/*padding-bottom: 10vh;*/
+	margin-top: -20vh;
+	/*position: relative;*/
+ 	width: 40vw;
+ 	display: flex;
+ 	justify-content: space-around;
+ 	 padding-left: 30vw;
 }
+
+
+
+
 
 
 
