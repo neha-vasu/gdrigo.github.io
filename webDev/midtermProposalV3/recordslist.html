@@ -9,104 +9,47 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
-    <!-- <meta name="viewport" center= -->
-    <!-- <script src="lalala.js"Ω -->
+    <script src="recordCollection.js" defer></script>
   </head>
 
   <body>
     <main>
 
-      <a class="backButton" href="index.html">CLOSE COLLECTON</a>
+      <a class="backButton" href="index.html"><img src="assets/backButton.png"/></a>
 
-      <div class=gridContainer>
-      	<div id="artistNameSpace">
-      		
-      	</div>
+      <div class=albumGrid>
+
+        <div id="artistNameSpace"></div>
 
       	<div class="recordColl">
       		<div class="recCoverAndOverlay">
-	        	<a class="recCover" href="whenicomehome.html" onmouseover="showDetails('When I Get Home','Solange')" onmouseleave="removeDetails()"><img src="assets/whenigethome/whenigethomeCover.jpeg"/></a>	
+	        	<a class="recCover" href="whenicomehome.html" onmouseover="showDetails('When I Get Home','Solange', '#976451')" onmouseleave="removeDetails()"><img src="assets/whenigethome/whenigethomeCover.jpeg"/></a>	
 	        </div>
 	        <div class="recCoverAndOverlay">
-	        	<a class="recCover" href="recordslist.html" onmouseover="showDetails('My Beautiful Dark Twisted Fantasy','Kanye West')" onmouseleave="removeDetails()"><img src="assets/mbdtf/mbdtfCover.jpg"/></a>
+	        	<a class="recCover" href="recordslist.html" onmouseover="showDetails('My Beautiful Dark Twisted Fantasy','Kanye West', '#CF2A42')" onmouseleave="removeDetails()"><img src="assets/mbdtf/mbdtfCover.jpg"/></a>
 	        </div>
 	        <div class="recCoverAndOverlay">
-	        	<a class="recCover" href="recordslist.html" onmouseover="showDetails('Flower Boy','Tyler, the Creator')" onmouseleave="removeDetails()"><img src="assets/flowerboy/flowerboyCover.png"/></a>
+	        	<a class="recCover" href="recordslist.html" onmouseover="showDetails('Flower Boy','Tyler, the Creator', '#FE731C')" onmouseleave="removeDetails()"><img src="assets/flowerboy/flowerboyCover.png"/></a>
 	        </div>
 	        <div class="recCoverAndOverlay">
-	        	<a class="recCover" href="recordslist.html" onmouseover="showDetails('Lemonade','Beyoncé')" onmouseleave="removeDetails()"><img src="assets/lemonade/lemonadeCover.jpg"/></a>
+	        	<a class="recCover" href="recordslist.html" onmouseover="showDetails('Giant Steps','John Coltrane', '#FAFCE4')" onmouseleave="removeDetails()"><img src="assets/giantsteps/giantstepsCover.jpg"/></a>
 	        </div>
+          <div class="recCoverAndOverlay">
+            <a class="recCover" href="recordslist.html" onmouseover="showDetails('Lemonade','Beyoncé', '#45807C')" onmouseleave="removeDetails()"><img src="assets/lemonade/lemonadeCover.jpg"/></a>
+          </div>
 	        <div class="recCoverAndOverlay">
-	        	<a class="recCover" href="recordslist.html" onmouseover="showDetails('IGOR','Tyler, the Creator')" onmouseleave="removeDetails()"><img src="assets/igor/igorCover.jpg"/></a>
+	        	<a class="recCover" href="recordslist.html" onmouseover="showDetails('DAMN.','Kendrick Lamar', '#F30E0F')" onmouseleave="removeDetails()"><img src="assets/damn/damnCover.png"/></a>
 	        </div>
-	        <div class="recCoverAndOverlay">
-	        	<a class="recCover" href="recordslist.html" onmouseover="showDetails('DAMN.','Kendrick Lamar')" onmouseleave="removeDetails()"><img src="assets/tpab/tpabCover.jpg"/></a>
-	        </div>
-	    </div>
+          
+        </div>
 
-
-	    <div id="albumNameSpace">
-      		
-      	</div>
+        <div id="albumNameSpace"></div>
 
       </div>
     
     </main> 
 
-    <script>
-    	function showDetails(albumName, artistName) {
-  let artistNS = document.getElementById("artistNameSpace");
-  let albumNS = document.getElementById("albumNameSpace");
-
-  //add artistName to artistNameSpace div
-  let artistPara = document.createElement("p");
-  let artistText = document.createTextNode(artistName);
-  artistPara.appendChild(artistText);
-
-  //styling
-  artistPara.style.color = 'white';
-  artistPara.style.writingMode = 'vertical-rl';
-  artistPara.style.textOrientation = 'sideways';
-  artistPara.style.textAlign = 'center';
-  artistPara.style.verticalAlign = 'middle';
-  artistPara.style.margin = 'auto';
-  artistPara.style.fontSize = '4vw';
-
-  artistNS.appendChild(artistPara);
-
-  //add albumName to albumNameSpace div
-  let albumPara = document.createElement("p");
-  let albumText = document.createTextNode(albumName);
-  albumPara.appendChild(albumText);
-
-  //styling
-  albumPara.style.color = "white";
-  albumPara.style.writingMode = "vertical-rl";
-  albumPara.style.textOrientation = "sideways";
-   albumPara.style.margin = "auto";
-  albumPara.style.textAlign = "center";
-  albumPara.style.verticalAlign = "middle";
- 
-  albumPara.style.fontSize = "5vw";
-
-  albumNS.appendChild(albumPara);
-}
-
-function removeDetails() {
-	let artistNS = document.getElementById("artistNameSpace");
-	let albumNS = document.getElementById("albumNameSpace");
-	while (artistNS.firstChild){
-		artistNS.removeChild(artistNS.firstChild); 
-	}
-
-	while (albumNS.firstChild){
-		albumNS.removeChild(albumNS.firstChild); 
-	}
- 
-}
-//Link to onomouseover and onmouseleave: https://www.w3schools.com/jsref/event_onmouseover.asp
-
-	</script> 
+    
 
   </body>
 

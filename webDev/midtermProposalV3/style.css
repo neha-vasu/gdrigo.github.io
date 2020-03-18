@@ -1,39 +1,19 @@
 html {
 	font-family: 'Bungee', cursive;
 }
-header {
-	text-align: center;  
-	border: 10px solid #402000;
-	width: 33vw;
-	height: 7vw;
-	margin-left: 34vw;
-	margin-top: -0.5vw;
-	background-image: url("assets/woodPanel.png");
-	margin-bottom: 3vw;
-	font-size: 33px;
-}
 
 body {
 	display: flex;
 	background-color: black;
 	/*background-image: url("assets/eye.png");*/
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center; 
+	/*background-repeat: no-repeat;*/
+	/*background-attachment: fixed;*/
+	/*background-position: center; */
 }
 
 
 /*index.html begins*/
 
-.homePage {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-}
-
-#mD {
-	/*width: 90vw;*/
-}
 
 .mainDisc {
 	display: flex;
@@ -51,16 +31,18 @@ body {
 
 /*recordlist.html begins*/
 
-.backButton {
+.backButton img{
     position: fixed;
-    top: 0px;
-    left: 0px; 
-    border: 3px solid white;
-    z-index: 3;
+    top: 1vw;
+    left: 1vw; 
+    width: 2vw;
+    z-index: 2;
 }
-.gridContainer {
+.albumGrid {
+	margin-top: 13vh;
 	display: grid;
 	grid-template-columns: 19vw 62vw 19vw;
+	grid-template-rows: 41vw;
 }
 .recCover img {
 	width: 20vw;
@@ -71,7 +53,7 @@ body {
 .recCover img:hover {
 	z-index: 1;
 	transition-duration: 1.5s;
-	transform: scale(1.2);
+	transform: scale(1.3);
 }
 
 .recordColl {
@@ -79,7 +61,6 @@ body {
 	grid-template-columns: repeat(3, 20vw);
 	grid-template-rows: repeat(2, 20vw);
 	grid-gap: 1vw;
-	
 }
 /*grid knowledge: https://css-tricks.com/snippets/css/complete-guide-grid/*/
 
@@ -87,20 +68,52 @@ body {
 	width: 20vw;
 }
 
-/*.artistNameSpace, .albumNameSpace {
+#artistNameSpace, #albumNameSpace {
 	color: white;
 	writing-mode: vertical-rl;
 	text-orientation: sideways;
 	text-align: center;
 	vertical-align: middle;
-	margin: auto;
-	font-size: 5vw;
-}*/
+	/*margin: auto;*/
+	font-size: 3vh;
+	/*overflow: hidden;*/
+}
 /* Link for text-orientation https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation*/
 
 /*recordlist.html ends*/
 
 
+
+/*whenicomehome.html begins*/
+
+.frontGrid {
+	position: relative;
+    top: 0vw;
+    left: 0vw; 
+	/*margin-top: 3vh;*/
+	display: grid;
+	grid-template-columns: 19vw 62vw 19vw;
+	grid-template-rows: 80vh auto 80vh;
+	z-index: 1;
+	
+	text-align: center;
+
+	/*grid-template-rows: 41vw;*/
+}
+
+/*prevents left and right columns from scrolling*/
+.leftCol, .rightCol {
+	position: sticky;
+	top: 0;
+}
+
+.backGrid {
+	position: absolute;
+    top: 1vw;
+    left: 1vw; 
+	z-index: 0;
+
+}
 
 .albumTitle  {
 	color:white;
@@ -121,7 +134,8 @@ a:hover {
 }
 
 .tracks {
-	z-index: 2;
+	z-index: 1;
+	/*overflow: auto;*/
 }
 
 .tracks a:link {
@@ -137,64 +151,33 @@ a:hover {
 	color: white; 
 }
 
-.backgroundVid {
-	height: 100%;
-	width: 100%;
-	background-image: url("assets/deloreans");
-}
-
-
-
-#thingsimag {
-	font-style: 3vh;
-	color: white;
-}
-
 .lyrics {
-	margin-top: -170vh;
 	text-decoration-style: flex;
-	width: 70vw;
+	width: 60vw;
 	/*text-align: center;*/
 	color: #8B4513;
 	font-size: 8vh;
-	z-index: -1;
+	z-index: 0;
 	opacity: 0.2;
 }
 
-
-
-
-
-
-.crate img{
-	width: 20vw;
-}
-
-
-
-
 .recordCovWithDisc {
-    position: relative; 
+    position: sticky; 
+    top: 0;
     display: block;
-    margin-left: 35vw;
     text-align: center;
     font-size: 4vh;
-    z-index: 2;
-    /*text-align: center;*/
+    /*z-index: 2;*/
 }
 
 .recordCovWithDisc img{
-	width: 28vw;
+	/*z-index: 2;*/
+	width: 25vw;
 	/*margin-left: 35vw;*/
 }
 
-.underDisc {
-	margin-left: -10vw;
-}
+/*whenigethome.html ends*/
 
-.recordPlay {
-	margin-left: 25vw;
-}
 
 .recordPlay img{
 	width: 25vw;
@@ -202,54 +185,22 @@ a:hover {
 }
 
 .tracks {
+	/*position: sticky;*/
 	text-align: center;
-	margin-left: 28vw;
+	
 	font-size: 30px;
 }
 
 .recordPlay {
-	padding-left: 10vw;
-}
-
-.wf img {
-	width: 90vw;
-}
-
-#cars, #ifcar, #arret {
-	width: 28vw;
-	padding-bottom: 8vw;
-	opacity: 0.3;
-}
-
-#ifcar {
-	padding-left: 20vw;
-}
-
-#arret {
-/*  margin-top: -80vh;
-*/  padding-right: 29vw;
+	/*padding-left: 10vw;*/
 }
 
 
-#wignhtmlMain {
-	position: relative; 
-	z-index: 1;
-}
+
 
 audio {
 	position: relative;
-	z-index: 1;
-}
-
-.pics {
-	z-index: 0;
-	/*padding-bottom: 10vh;*/
-	margin-top: -20vh;
-	/*position: relative;*/
- 	width: 40vw;
- 	display: flex;
- 	justify-content: space-around;
- 	 padding-left: 30vw;
+	/*z-index: 1;*/
 }
 
 

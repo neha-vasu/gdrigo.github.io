@@ -9,79 +9,98 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
+    <script src="recordCollection.js" defer></script>
     <!-- <meta name="viewport" center= -->
     <!-- <script src="lalala.js"Ω -->
   </head>
 
   <body>
-    <a class="backButton" href="opencrate.html">BACK TO COLLECTON</a>
 
-    <main id="wignhtmlMain">
+    <a class="backButton" href="recordslist.html"><img src="assets/backButton.png"/></a>
 
-     
+    <main>
 
-      <div class="recordCovWithDisc">
-        <a class="albumTitle" href=""><p>When I Get Home - Solange</p></a>
-        <img src="assets/wighCovDisc.png"/>
-        <!-- <img id="underDisc" src="assets/whiteRec.png"/> -->
+      <div class="frontGrid">
+        
+        <div class="leftCol" id="artistNameSpace"></div>
+
+        <div class="midCOl">
+
+          <div class="recordCovWithDisc">
+            <img src="assets/whenigethome/wighCovDisc.png"/>
+          </div>
+
+          <div class="tracks">
+            <a href=""><p>Things I Imagined</p></a>
+            <audio controls autoplay>
+            <!-- <audio controls autoplay> -->
+              <source src="assets/(01)Things-I-Imagined-Solange.mp3" type="audio/mpeg">
+            </audio>
+            <a href=""><p>S McGregor (interlude)</p></a>
+            <a href=""><p>Down With the Clique</p></a>
+            <a href=""><p>Way to the Show</p></a>
+            <a href=""><p>Can I Hold the Mic(interlude)</p></a>
+            <a href=""><p>Almeda</p></a>
+            <a href=""><p>Time (is)</p></a>
+            <a href=""><p>My Skin My Logo</p></a>
+            <a href=""><p>We Deal With the Freak'n(intermission)</p></a>
+            <a href=""><p>Jerrod</p></a>
+            <a href=""><p>Binz</p></a>
+            <a href=""><p>Beltway</p></a>
+            <a href=""><p>Exit Scott (interlude)</p></a>
+            <a href=""><p>Sound of Rain</p></a>
+            <a href=""><p>Not Screwed! (interlude)</p></a>
+            <a href=""><p>I'm a Witness</p></a>
+          </div>
+
+        </div>
+
+        <div class="rightCol" id="albumNameSpace"></div>
+
+
       </div>
 
-      <div class="tracks">
-        <a href=""><p>Things I Imagined</p></a>
-        <audio controls autoplay>
-          <source src="assets/(01)Things-I-Imagined-Solange.mp3" type="audio/mpeg">
-        </audio>
-        <a href=""><p>S McGregor (interlude)</p></a>
-        <a href=""><p>Down With the Clique</p></a>
-        <a href=""><p>Way to the Show</p></a>
-        <a href=""><p>Can I Hold the Mic(interlude)</p></a>
-        <a href=""><p>Almeda</p></a>
-        <a href=""><p>Time (is)</p></a>
-        <a href=""><p>My Skin My Logo</p></a>
-        <a href=""><p>We Deal With the Freak'n(intermission)</p></a>
-        <a href=""><p>Jerrod</p></a>
-        <a href=""><p>Binz</p></a>
-        <a href=""><p>Beltway</p></a>
-        <a href=""><p>Exit Scott (interlude)</p></a>
-        <a href=""><p>Sound of Rain</p></a>
-        <a href=""><p>Not Screwed! (interlude)</p></a>
-        <a href=""><p>I'm a Witness</p></a>
+      <div class="backGrid">
 
-      </div>
-
-      <!-- <div class="pics">
-        <img id="cars" src="assets/deloreans.png"/>
-        <img id="ifcar" src="assets/infrontcar.jpg"/>
-        <img id="arret" src="assets/arret.jpg"/>
-      </div> -->
-
-      <div class="lyrics">
-        <p>
-          Saw things I imagined
-          I saw things I imagined
-          I saw things I imagined
-          I saw things I imagined
-          I saw things I imagined
-          Things I imagined
-          Things I imagined
-          Things I imagined
-          Saw things I imagined
-          I saw things I imagined
-          I saw things I imagined
-          I saw things I imagined
-          I saw things I imagined
-          Things I imagined
-          Things I imagined
-          Things I imagined
-          Taking on, taking on the lie
-          Taking on, taking on the lie
-          Taking on the lie
-        </p>
+        <div class="lyrics">
+          <p>
+            Saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            Things I imagined
+            Things I imagined
+            Things I imagined
+            Saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            Things I imagined
+            Things I imagined
+            Things I imagined
+            Taking on, taking on the lie
+            Taking on, taking on the lie
+            Taking on the lie
+          </p>
+        </div>
       </div>
 
     
-    </main>  
+    </main> 
+
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+          console.log('DOM fully loaded and parsed');
+          showDetails('When I Get Home','Solange', '#976451');
+      });
+      //document.addEventListener('DOMContentLoaded', function(event) { showDetails('When I Get Home','Solange', '#976451') })
+      // document.addEventListener("DOMContentLoaded", showDetails('When I Get Home','Solange', '#976451')); 
+    </script>
+
 
   </body>
+   
 
 </html>
