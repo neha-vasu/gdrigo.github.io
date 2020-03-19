@@ -10,8 +10,6 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
     <script src="recordCollection.js" defer></script>
-    <!-- <meta name="viewport" center= -->
-    <!-- <script src="lalala.js"Ω -->
   </head>
 
   <body>
@@ -39,7 +37,7 @@
           </div>
 
           <div class="tracks" id="tracks">
-            <a class="track active" onclick="playSong('1','IGOR')"><p>IGOR'S THEME</p></a>
+            <a class="track" onclick="playSong('1','IGOR')"><p>IGOR'S THEME</p></a>
             <a class="track" onclick="playSong('2','IGOR')"><p>EARFQUAKE</p></a>
             <a class="track" onclick="playSong('3','IGOR')"><p>I THINK</p></a>
             <a class="track" onclick="playSong('4','IGOR')"><p>EXACTLY WHAT YOU RUN FROM YOU END UP CHASING</p></a>
@@ -106,8 +104,8 @@
 
     <script>
       window.addEventListener('DOMContentLoaded', (event) => {
-          // console.log('DOM fully loaded and parsed');
           showDetails('IGOR','Tyler, the Creator', '#F2ABBE');
+          setVolume();
       });
 
     </script>

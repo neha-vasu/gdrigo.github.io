@@ -10,8 +10,6 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
     <script src="recordCollection.js" defer></script>
-    <!-- <meta name="viewport" center= -->
-    <!-- <script src="lalala.js"Ω -->
   </head>
 
   <body>
@@ -39,7 +37,7 @@
           </div>
 
           <div class="tracks" id="tracks">
-            <a class="track active" onclick="playSong('1','theslowrush')"><p>One More Year</p></a>
+            <a class="track" onclick="playSong('1','theslowrush')"><p>One More Year</p></a>
             <a class="track" onclick="playSong('2','theslowrush')"><p>Instant Delivery</p></a>
             <a class="track" onclick="playSong('3','theslowrush')"><p>Borderlinee</p></a>
             <a class="track" onclick="playSong('4','theslowrush')"><p>Posthumous Forgiveness</p></a>
@@ -73,9 +71,6 @@
 		
 		<img class="med" src="assets/theslowrush/media/dues.png"/>
 		<div></div>
-		<!-- <video class="med" autoplay loop id="whenigethomeMedia2">
-		  <source src="assets/whenigethome/media/comehere.mp4" type="video/mp4">
-		 </video> -->
 		<div></div>
 		<div></div>
 		<!-- row2 ends-->
@@ -103,8 +98,8 @@
 
     <script>
       window.addEventListener('DOMContentLoaded', (event) => {
-          // console.log('DOM fully loaded and parsed');
           showDetails('The Slow Rush','Tame Impala', '#C42508');
+          setVolume();
       });
 
     </script>

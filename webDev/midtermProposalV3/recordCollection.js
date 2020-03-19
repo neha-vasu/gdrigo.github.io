@@ -1,3 +1,9 @@
+//FOR all audioTags
+function  setVolume() {
+  let audioTag = document.getElementById('audioTag');
+  audioTag.volume = 0.2;
+}
+
 /////////////////////
 //FOR recordlist.html
 
@@ -60,27 +66,6 @@ function playSong(songNum, album) {
   // console.log(filepath);
   var audioTag = document.getElementById("audioTag");
   audioTag.src = filepath;
+  // setVolume
   audioTag.load();
-
-  // Add active class to the current button (highlight it)
-  // var header = document.getElementById("tracks");
-  // var songs = document.getElementsByClassName("track");
-  //grey out all tracks
-  
-
-  // for (var i = 0; i < songs.length; i++) {
-  //   songs[i].style.color = "grey";
-  // }
-
-
-  // this.style.color = 'white';
-    // songs[i].addEventListener("click", function() {
-    // var current = document.getElementsByClassName("active");
-    // current[0].className = current[0].className.replace(" active", "");
-    // this.className += " active";
-    // });
-  
-  
 }
-
-//code adapted from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio

@@ -10,8 +10,6 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
     <script src="recordCollection.js" defer></script>
-    <!-- <meta name="viewport" center= -->
-    <!-- <script src="lalala.js"Ω -->
   </head>
 
   <body>
@@ -39,7 +37,7 @@
           </div>
 
           <div class="tracks" id="tracks">
-            <a class="track active" onclick="playSong('1','toafrica')"><p>Worth the Weight</p></a>
+            <a class="track" onclick="playSong('1','toafrica')"><p>Worth the Weight</p></a>
             <a class="track" onclick="playSong('2','toafrica')"><p>85 to Africa</p></a>
             <a class="track" onclick="playSong('3','toafrica')"><p>Babouche (feat. GoldLink)</p></a>
             <a class="track" onclick="playSong('4','toafrica')"><p>Tribe</p></a>
@@ -123,8 +121,8 @@
 
     <script>
       window.addEventListener('DOMContentLoaded', (event) => {
-          // console.log('DOM fully loaded and parsed');
           showDetails('85 to Africa','Jidenna', '#D6922D');
+          setVolume();
       });
 
     </script>

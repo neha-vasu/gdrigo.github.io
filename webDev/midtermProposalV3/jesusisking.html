@@ -10,8 +10,6 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
     <script src="recordCollection.js" defer></script>
-    <!-- <meta name="viewport" center= -->
-    <!-- <script src="lalala.js"Ω -->
   </head>
 
   <body>
@@ -39,7 +37,7 @@
           </div>
 
           <div class="tracks" id="tracks">
-            <a class="track active" onclick="playSong('1','jesusisking')"><p>Every Hour</p></a>
+            <a class="track" onclick="playSong('1','jesusisking')"><p>Every Hour</p></a>
             <a class="track" onclick="playSong('2','jesusisking')"><p>Selah</p></a>
             <a class="track" onclick="playSong('3','jesusisking')"><p>Follow God</p></a>
             <a class="track" onclick="playSong('4','jesusisking')"><p>Closed On Sunday</p></a>
@@ -72,9 +70,6 @@
 		<!-- row2 -->
 		<div></div>
 		<img class="med" src="assets/jesusisking/media/praise.jpg"/>
-		<!-- <video class="med" autoplay loop id="whenigethomeMedia2">
-		  <source src="assets/whenigethome/media/comehere.mp4" type="video/mp4">
-		 </video> -->
 		<div></div>
 		<div></div>
 		<!-- row2 ends-->
@@ -132,7 +127,6 @@
 		<video class="med" autoplay loop>
 		  <source src="assets/jesusisking/media/prayerHands.mp4" type="video/mp4">
 		 </video>
-		  <!-- <source src="movie.ogg" type="video/ogg"> -->
 		  
         <!-- row4 ends-->       
       </div>
@@ -149,8 +143,8 @@
 
     <script>
       window.addEventListener('DOMContentLoaded', (event) => {
-          // console.log('DOM fully loaded and parsed');
           showDetails('JESUS IS KING','Kanye West', '#1428BC');
+          setVolume();
       });
 
     </script>

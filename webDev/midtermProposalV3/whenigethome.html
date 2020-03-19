@@ -10,8 +10,6 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <meta charset="utf-8">
     <script src="recordCollection.js" defer></script>
-    <!-- <meta name="viewport" center= -->
-    <!-- <script src="lalala.js"Ω -->
   </head>
 
   <body>
@@ -39,7 +37,7 @@
           </div>
 
           <div class="tracks" id="tracks">
-            <a class="track active" onclick="playSong('1','whenigethome')"><p>Things I Imagined</p></a>
+            <a class="track" onclick="playSong('1','whenigethome')"><p>Things I Imagined</p></a>
             <a class="track" onclick="playSong('2','whenigethome')"><p>S McGregor (interlude)</p></a>
             <a class="track" onclick="playSong('3','whenigethome')"><p>Down With the Clique</p></a>
             <a class="track" onclick="playSong('4','whenigethome')"><p>Way to the Show</p></a>
@@ -77,9 +75,6 @@
 		<!-- row2 -->
 		<div></div>
 		<img class="med" class="whenigethomeMed" src="assets/whenigethome/media/deloreans.png"/>
-		<!-- <video class="med" autoplay loop id="whenigethomeMedia2">
-		  <source src="assets/whenigethome/media/comehere.mp4" type="video/mp4">
-		 </video> -->
 		<div></div>
 		<div></div>
 		<!-- row2 ends-->
@@ -89,7 +84,6 @@
 		<div></div>
 		<video class="whenigethomeMed" class="med" autoplay loop id="whenigethomeMedia3">
 		  <source src="assets/whenigethome/media/stayaway.mp4" type="video/mp4">
-		  <!-- <source src="movie.ogg" type="video/ogg"> -->
 		  </video>
 		<div></div>
 		<!-- row3 ends-->
@@ -125,16 +119,13 @@
         <div></div>
 		<video class="med" class="whenigethomeMed" autoplay loop id="whenigethomeMedia2">
 		  <source src="assets/whenigethome/media/circle.mp4" type="video/mp4">
-		 </video>
-		  <!-- <source src="movie.ogg" type="video/ogg"> -->
-		  
+		 </video>		  
         <!-- row4 ends-->  
 
         <!-- row5-->
         <div></div>
         <div></div>
         <div></div>
-		<!-- <img class="med" class="whenigethomeMed" src="assets/whenigethome/media/infrontcar.jpg"/> -->
 		<div></div>
 		  
         <!-- row5 ends-->       
@@ -145,8 +136,8 @@
 
     <script>
       window.addEventListener('DOMContentLoaded', (event) => {
-          // console.log('DOM fully loaded and parsed');
           showDetails('When I Get Home','Solange', '#976451');
+          setVolume();
       });
 
     </script>

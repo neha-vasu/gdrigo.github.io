@@ -5,28 +5,18 @@ html {
 body {
 	display: flex;
 	background-color: black;
-	/*background-image: url("assets/eye.png");*/
-	/*background-repeat: no-repeat;*/
-	/*background-attachment: fixed;*/
-	/*background-position: center; */
 }
 
 
 /*index.html begins*/
 
+#homepageDisc img {
+	position: fixed;
+	top: 5vh;
+	left: 25vw;
+	width: 50vw;
 
-.mainDisc {
-	display: grid;
-	justify-content: center;
-	grid-template-columns: 19vw 62vw 19vw;
-	grid-template-rows: 41vw;
-	width: 80vw;
-	/*font-size: 2vw;*/
-	/*text-align: center;*/
-	/*margin-top: -55vh;*/
-	/*margin-top: -50%;*/
 }
-
 
 video, .med {
 	position: sticky;
@@ -34,7 +24,25 @@ video, .med {
 	opacity:.8;
 }
 
+#homepageGrid {
+	z-index: -1;
+}
 
+#homepageGrid .recCover {
+	filter: blur(16px);
+}
+
+.homepageOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #FFFFFF;
+	opacity: 0.7;
+
+}
 
 
 
@@ -115,7 +123,6 @@ video, .med {
 /*prevents left and right columns from scrolling*/
 .leftCol, .rightCol {
 	position: sticky;
-	/*position: fixed;*/
 	top: 0;
 }
 
@@ -127,43 +134,19 @@ video, .med {
 .backGrid {
 	position: fixed;
 	padding: 2vw;
-	/*position: relative;*/
     top: 3vw;
     left: 0vw; 
-	/*margin-top: 3vh;*/
 	display: grid;
-	/*justify-content: space-around;*/
 	grid-template-columns: repeat(4, 24vw);
-	grid-template-rows: repeat(7, 24vh);
-	/*grid-gap: 1vw;*/
-    
+	grid-template-rows: repeat(7, 24vh);    
 	z-index: 0;
 
 }
-
-/*.albumTitle  {
-	color:white;
-	text-decoration: none;
-}*/
-
-/*a:link {
-	color:white;
-	text-decoration: none;
-}
-
-a:visited {
-	color:white;
-}
-
-a:hover {
-	color: white; 
-}*/
 
 .tracks button {
 	height: 6vh;
 	display: block;
 	z-index: 1;
-	/*width: 5vw;*/
 	font-size: 3vw;
 	background:none;
     border:none;
@@ -174,31 +157,17 @@ a:hover {
 	text-decoration: none;
 	font-family: 'Bungee', cursive;
 	text-align: center;
-	/*overflow: auto;*/
 }
 
 .track {
 	color: grey;
-	 cursor: pointer;
-	/*width: 5vw;
-	background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    cursor: pointer;
-    color:grey;
-	text-decoration: none;
-	font-family: 'Bungee', cursive;*/
+	cursor: pointer;
 }
 
 .tracks a:link {
 	color:grey;
 	text-decoration: none;
 }
-
-/*.tracks a:visited {
-	color:grey;
-}*/
 
 .active {
 	color: white;
@@ -213,7 +182,6 @@ a:hover {
 	top: 0;
 	left: 0;
 	width: 100vw;
-	/*text-align: center;*/
 	color: #8B4513;
 	font-size: 8.5vh;
 	z-index: -1;
@@ -228,7 +196,6 @@ a:hover {
 	top: 0;
 	left: 0;
 	width: 100vw;
-	/*text-align: center;*/
 	color: #1729B9;
 	font-size: 4.8vh;
 	z-index: -1;
@@ -239,21 +206,15 @@ a:hover {
 
 .recordCovWithDisc {
     position: fixed; 
-    /*display: */
     top: 0;
     left: 40vw;
     text-align: center;
     font-size: 4vh;
-
-    /*z-index: 2;*/
 }
 
 .recordCovWithDisc img{
-	/*z-index: 2;*/
 	height: 20vw;
 	width: 20vw;
-	/*width: 18vw;*/
-	/*margin-left: 35vw;*/
 }
 
 .audioPlayer {
@@ -273,7 +234,6 @@ a:hover {
 	top: 0;
 	left: 0;
 	width: 100vw;
-	/*text-align: center;*/
 	color: #8B4513;
 	font-size: 8.5vh;
 	z-index: -1;
@@ -302,7 +262,6 @@ a:hover {
 }
 
 .tracks {
-	/*position: fixed;*/
 	text-align: center;
 	margin-top: 27vw;
 	left: 27vw;
@@ -311,16 +270,10 @@ a:hover {
 	overflow: scroll;
 }
 
-.recordPlay {
-	/*padding-left: 10vw;*/
-}
-
-
-
 
 audio {
 	position: relative;
-	/*z-index: 1;*/
+	
 }
 
 
