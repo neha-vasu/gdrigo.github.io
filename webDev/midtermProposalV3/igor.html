@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>IGOR - Tyler, the Creator</title>
+    <link rel="shortcut icon" type="image/png" href="assets/discVariations/whiteRec.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Megrim|Rubik+Mono+One&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <script src="recordCollection.js" defer></script>
+    <!-- <meta name="viewport" center= -->
+    <!-- <script src="lalala.js"Ω -->
+  </head>
+
+  <body>
+
+    <a class="backButton" href="recordslist.html"><img src="assets/backButton.png"/></a>
+
+    <main>
+
+      <div class="frontGrid">
+        
+        <div class="leftCol" id="artistNameSpace"></div>
+
+        <div class="midCOl">
+
+          <div class="recordCovWithDisc">
+            <img src="assets/whenigethome/wighCovDisc.png"/>
+          </div>
+          
+          <div class="audioPlayer">
+            <audio controls id="audioTag">
+            <!-- <audio controls autoplay> -->
+              <source src="assets/igor/songs/1.mp3" type="audio/mpeg">
+
+            </audio>
+          </div>
+
+          <div class="tracks" id="tracks">
+            <a class="track active" onclick="playSong('1','IGOR')"><p>IGOR'S THEME</p></a>
+            <a class="track" onclick="playSong('2','IGOR')"><p>EARFQUAKE</p></a>
+            <a class="track" onclick="playSong('3','IGOR')"><p>I THINK</p></a>
+            <a class="track" onclick="playSong('4','IGOR')"><p>EXACTLY WHAT YOU RUN FROM YOU END UP CHASING</p></a>
+            <a class="track" onclick="playSong('5','IGOR')"><p>RUNNING OUT OF TIME</p></a>
+            <a class="track" onclick="playSong('6','IGOR')"><p>NEW MAGIC WAND</p></a>
+            <a class="track" onclick="playSong('7','IGOR')"><p>A BOY IS A GUN*</p></a>
+            <a class="track" onclick="playSong('8','IGOR')"><p>PUPPET</p></a>
+            <a class="track" onclick="playSong('9','IGOR')"><p>WHAT'S GOOD</p></a>
+            <a class="track" onclick="playSong('10','IGOR')"><p>GONE,GONE/THANK YOU</p></a>
+            <a class="track" onclick="playSong('11','IGOR')"><p>I DON'T LOVE YOU ANYMORE</p></a>
+            <a class="track" onclick="playSong('12','IGOR')"><p>ARE WE STILL FRIENDS?</p></a>
+          </div>
+
+        </div>
+
+        <div class="rightCol" id="albumNameSpace"></div>
+
+
+      </div>
+
+      <div class="backGrid">
+
+        <div class="lyrics">
+          <p>
+            Saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            Things I imagined
+            Things I imagined
+            Things I imagined
+            Saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            Things I imagined
+            Things I imagined
+            Things I imagined
+            Taking on, taking on the lie
+            Taking on, taking on the lie
+            Taking on the lie
+          </p>
+        </div>
+      </div>
+
+    
+    </main> 
+
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+          // console.log('DOM fully loaded and parsed');
+          showDetails('IGOR','Tyler, the Creator', '#F2ABBE');
+      });
+
+    </script>
+
+
+  </body>
+   
+
+</html>

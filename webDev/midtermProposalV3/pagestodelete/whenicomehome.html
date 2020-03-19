@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>RECORD PLAYER</title>
+    <link rel="shortcut icon" type="image/png" href="assets/discVariations/whiteRec.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Megrim|Rubik+Mono+One&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <script src="recordCollection.js" defer></script>
+    <!-- <meta name="viewport" center= -->
+    <!-- <script src="lalala.js"Ω -->
+  </head>
+
+  <body>
+
+    <a class="backButton" href="recordslist.html"><img src="assets/backButton.png"/></a>
+
+    <main>
+
+      <div class="frontGrid">
+        
+        <div class="leftCol" id="artistNameSpace"></div>
+
+        <div class="midCOl">
+
+          <div class="recordCovWithDisc">
+            <img src="assets/whenigethome/wighCovDisc.png"/>
+          </div>
+          
+          <div class="audioPlayer">
+            <audio controls autoplay id="audioTag">
+            <!-- <audio controls autoplay> -->
+              <source src="assets/whenigethome/songs/1.mp3" type="audio/mpeg">
+
+            </audio>
+          </div>
+
+          <div class="tracks">
+            <a class="track" onclick="playSong('1','whenigethome')"><p>Things I Imagined</p></a>
+            <a class="track" onclick="playSong('2','whenigethome')"><p>S McGregor (interlude)</p></a>
+            <a class="track" onclick="playSong('3','whenigethome')"><p>Down With the Clique</p></a>
+            <a class="track" onclick="playSong('4','whenigethome')"><p>Way to the Show</p></a>
+            <a class="track" onclick="playSong('5','whenigethome')"><p>Can I Hold the Mic(interlude)</p></a>
+            <a class="track" onclick="playSong('6','whenigethome')"><p>Almeda</p></a>
+            <a class="track" onclick="playSong('7','whenigethome')"><p>Time (is)</p></a>
+            <a class="track" onclick="playSong('8','whenigethome')"><p>My Skin My Logo</p></a>
+            <a class="track" onclick="playSong('9','whenigethome')"><p>We Deal With the Freak'n(intermission)</p></a>
+            <a class="track" onclick="playSong('10','whenigethome')"><p>Jerrod</p></a>
+            <a class="track" onclick="playSong('11','whenigethome')"><p>Binz</p></a>
+            <a class="track" onclick="playSong('12','whenigethome')"><p>Beltway</p></a>
+            <a class="track" onclick="playSong('13','whenigethome')"><p>Exit Scott (interlude)</p></a>
+            <a class="track" onclick="playSong('14','whenigethome')"><p>Sound of Rain</p></a>
+            <a class="track" onclick="playSong('15','whenigethome')"><p>Not Screwed! (interlude)</p></a>
+            <a class="track" onclick="playSong('16','whenigethome')"><p>I'm a Witness</p></a>
+          </div>
+
+        </div>
+
+        <div class="rightCol" id="albumNameSpace"></div>
+
+
+      </div>
+
+      <div class="backGrid">
+
+        <div class="lyrics">
+          <p>
+            Saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            Things I imagined
+            Things I imagined
+            Things I imagined
+            Saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            I saw things I imagined
+            Things I imagined
+            Things I imagined
+            Things I imagined
+            Taking on, taking on the lie
+            Taking on, taking on the lie
+            Taking on the lie
+          </p>
+        </div>
+      </div>
+
+    
+    </main> 
+
+    <script>
+      window.addEventListener('DOMContentLoaded', (event) => {
+          console.log('DOM fully loaded and parsed');
+          showDetails('When I Get Home','Solange', '#976451');
+      });
+
+    </script>
+
+
+  </body>
+   
+
+</html>

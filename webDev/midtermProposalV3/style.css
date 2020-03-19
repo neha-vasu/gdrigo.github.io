@@ -16,8 +16,10 @@ body {
 
 
 .mainDisc {
-	display: flex;
+	display: grid;
 	justify-content: center;
+	grid-template-columns: 19vw 62vw 19vw;
+	grid-template-rows: 41vw;
 	width: 80vw;
 	/*font-size: 2vw;*/
 	/*text-align: center;*/
@@ -120,7 +122,7 @@ body {
 	text-decoration: none;
 }
 
-a:link {
+/*a:link {
 	color:white;
 	text-decoration: none;
 }
@@ -131,11 +133,38 @@ a:visited {
 
 a:hover {
 	color: white; 
+}*/
+
+.tracks button {
+	height: 6vh;
+	display: block;
+	z-index: 1;
+	/*width: 5vw;*/
+	font-size: 3vw;
+	background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    color:grey;
+	text-decoration: none;
+	font-family: 'Bungee', cursive;
+	text-align: center;
+	/*overflow: auto;*/
 }
 
-.tracks {
-	z-index: 1;
-	/*overflow: auto;*/
+.track {
+	color: grey;
+	 cursor: pointer;
+	/*width: 5vw;
+	background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    color:grey;
+	text-decoration: none;
+	font-family: 'Bungee', cursive;*/
 }
 
 .tracks a:link {
@@ -143,11 +172,14 @@ a:hover {
 	text-decoration: none;
 }
 
-.tracks a:visited {
+/*.tracks a:visited {
 	color:grey;
-}
+}*/
 
-.tracks a:hover {
+.active {
+	color: white;
+}
+a:hover {
 	color: white; 
 }
 
@@ -163,8 +195,8 @@ a:hover {
 
 .recordCovWithDisc {
     position: sticky; 
+    /*display: */
     top: 0;
-    display: block;
     text-align: center;
     font-size: 4vh;
     /*z-index: 2;*/
@@ -174,6 +206,10 @@ a:hover {
 	/*z-index: 2;*/
 	width: 25vw;
 	/*margin-left: 35vw;*/
+}
+
+.audioPlayer {
+	position: sticky; 
 }
 
 /*whenigethome.html ends*/
