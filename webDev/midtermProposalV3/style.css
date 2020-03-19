@@ -28,6 +28,15 @@ body {
 }
 
 
+video, .med {
+	position: sticky;
+	width: 100%;
+	opacity:.8;
+}
+
+
+
+
 
 /*index.html ends*/
 
@@ -106,21 +115,36 @@ body {
 /*prevents left and right columns from scrolling*/
 .leftCol, .rightCol {
 	position: sticky;
+	/*position: fixed;*/
 	top: 0;
 }
 
+.rightCol {
+	right: 0;
+	
+}
+
 .backGrid {
-	position: absolute;
-    top: 1vw;
-    left: 1vw; 
+	position: fixed;
+	padding: 2vw;
+	/*position: relative;*/
+    top: 3vw;
+    left: 0vw; 
+	/*margin-top: 3vh;*/
+	display: grid;
+	/*justify-content: space-around;*/
+	grid-template-columns: repeat(4, 24vw);
+	grid-template-rows: repeat(7, 24vh);
+	/*grid-gap: 1vw;*/
+    
 	z-index: 0;
 
 }
 
-.albumTitle  {
+/*.albumTitle  {
 	color:white;
 	text-decoration: none;
-}
+}*/
 
 /*a:link {
 	color:white;
@@ -185,35 +209,92 @@ a:hover {
 
 .lyrics {
 	text-decoration-style: flex;
-	width: 60vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
 	/*text-align: center;*/
 	color: #8B4513;
-	font-size: 8vh;
-	z-index: 0;
+	font-size: 8.5vh;
+	z-index: -1;
 	opacity: 0.2;
+	text-align: center;
+	margin-top: -10vh;
+}
+
+.lyricsKanye {
+	text-decoration-style: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	/*text-align: center;*/
+	color: #1729B9;
+	font-size: 4.8vh;
+	z-index: -1;
+	opacity: 0.2;
+	text-align: center;
+
 }
 
 .recordCovWithDisc {
-    position: sticky; 
+    position: fixed; 
     /*display: */
     top: 0;
+    left: 40vw;
     text-align: center;
     font-size: 4vh;
+
     /*z-index: 2;*/
 }
 
 .recordCovWithDisc img{
 	/*z-index: 2;*/
-	width: 25vw;
+	height: 20vw;
+	width: 20vw;
+	/*width: 18vw;*/
 	/*margin-left: 35vw;*/
 }
 
 .audioPlayer {
-	position: sticky; 
+	position: fixed;
+	padding-top: 1vh;
+	top: 22vw;
+	left: 40vw;
+
 }
 
 /*whenigethome.html ends*/
 
+/*slow rush*/
+#timeBack {
+	text-decoration-style: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	/*text-align: center;*/
+	color: #8B4513;
+	font-size: 8.5vh;
+	z-index: -1;
+	opacity: 0.4;
+	text-align: center;
+	
+}
+
+#beychellaCrest {
+	position: fixed;
+	top: 0;
+	left: 25vw;
+	width: 50vw;
+}
+
+#tylerJacket {
+	position: fixed;
+	top: 0;
+	left: 25vw;
+	width: 60vw;
+}
 
 .recordPlay img{
 	width: 25vw;
@@ -221,10 +302,13 @@ a:hover {
 }
 
 .tracks {
-	/*position: sticky;*/
+	/*position: fixed;*/
 	text-align: center;
+	margin-top: 27vw;
+	left: 27vw;
 	
 	font-size: 30px;
+	overflow: scroll;
 }
 
 .recordPlay {
