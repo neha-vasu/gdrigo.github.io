@@ -90,7 +90,16 @@ function addStyling(artistOrAlbumText, textColor) {
   artistOrAlbumText.style.writingMode = "vertical-rl";
   artistOrAlbumText.style.textOrientation = "sideways";
   artistOrAlbumText.style.textAlign = "center";
-  artistOrAlbumText.style.fontSize = "4vw";
+
+  //sets front size based on screensize
+  var screenSize = window.matchMedia("(max-width: 800px)")
+  if (screenSize.matches) { // If media query matches
+    artistOrAlbumText.style.fontSize = "6vw";
+  } else {
+   artistOrAlbumText.style.fontSize = "4vw";
+  }
+
+  // artistOrAlbumText.style.fontSize = "4vw";
 }
 
 function removeDetails() {
@@ -125,8 +134,6 @@ function playSong(songNum, album) {
   greyoutTrack(currHighlightedTrack);
   highlightTrack(songNum)
   currHighlightedTrack = parseInt(songNum)
-  // unactiveAll();
-  // setActive(songNum);
 }
 
 //sets specified track to white

@@ -92,9 +92,7 @@ video, .med {
 	text-orientation: sideways;
 	text-align: center;
 	vertical-align: middle;
-	/*margin: auto;*/
 	font-size: 3vh;
-	/*overflow: hidden;*/
 }
 /* Link for text-orientation https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation*/
 
@@ -108,15 +106,11 @@ video, .med {
 	position: relative;
     top: 0vw;
     left: 0vw; 
-	/*margin-top: 3vh;*/
 	display: grid;
 	grid-template-columns: 19vw 62vw 19vw;
 	grid-template-rows: 80vh auto 80vh;
 	z-index: 1;
-	
 	text-align: center;
-
-	/*grid-template-rows: 41vw;*/
 }
 
 /*prevents left and right columns from scrolling*/
@@ -139,24 +133,8 @@ video, .med {
 	grid-template-columns: repeat(4, 24vw);
 	grid-template-rows: repeat(7, 24vh);    
 	z-index: 0;
-
 }
 
-.tracks button {
-	height: 6vh;
-	display: block;
-	z-index: 1;
-	font-size: 3vw;
-	background:none;
-    border:none;
-    margin:0;
-    padding:0;
-    cursor: pointer;
-    color:grey;
-	text-decoration: none;
-	font-family: 'Bungee', cursive;
-	text-align: center;
-}
 
 .track {
 	color: grey;
@@ -222,7 +200,6 @@ video, .med {
 	top: 22vw;
 	left: 40vw;
 	width: 20vw;
-
 }
 
 /*whenigethome.html ends*/
@@ -265,9 +242,9 @@ video, .med {
 	text-align: center;
 	margin-top: 27vw;
 	left: 27vw;
-	
-	font-size: 30px;
+	font-size: 2.5vw;
 	overflow: scroll;
+	overflow-x: none;
 }
 
 
@@ -276,6 +253,89 @@ audio {
 	
 }
 
+@media(max-width: 800px) {
+
+
+ 
+ .albumGrid {
+	margin-top: 13vh;
+	display: grid;
+	grid-template-columns: 19vw 62vw 19vw;
+	grid-template-rows: 93vw;
+}
+
+ .recordColl {
+	display: grid;
+	grid-template-columns: repeat(2, 30vw);
+	grid-template-rows: repeat(3, 30vw);
+	grid-gap: 2vw;
+}
+
+.recCover img {
+	width: 30vw;
+	z-index: 0;
+	padding: .1vw;
+}
+
+#artistNameSpace, #albumNameSpace {
+	color: white;
+	/*writing-mode: vertical-rl;*/
+	text-orientation: sideways;
+	text-align: center;
+	vertical-align: middle;
+	/*font-size: 100px;*/
+}
+
+.recordCovWithDisc {
+    position: fixed; 
+    top: 0;
+    left: 25vw;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.recordCovWithDisc img{
+	height: 50vw;
+	width: 50vw;
+}
+
+.audioPlayer {
+	position: fixed;
+	padding-top: 1vh;
+	top: 52vw;
+	left: 25vw;
+	width: 20vw;
+}
+
+.tracks {
+	text-align: center;
+	margin-top: 67vw;
+	left: 27vw;
+	font-size: 3.5vw;
+	overflow: scroll;
+}
+
+.backButton img{
+    position: fixed;
+    top: 1vw;
+    left: 1vw; 
+    width: 5vw;
+    z-index: 2;
+}
+
+.backGrid {
+	position: fixed;
+	padding: 2vw;
+    top: 3vw;
+    left: 0vw; 
+	display: grid;
+	grid-template-columns: repeat(4, 24vw);
+	grid-template-rows: repeat(4, 25vh);    
+	z-index: 0;
+}
+
+ 
+}
 
 
 
