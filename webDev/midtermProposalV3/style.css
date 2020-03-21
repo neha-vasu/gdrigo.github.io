@@ -32,7 +32,7 @@ video, .med {
 	filter: blur(16px);
 }
 
-.homepageOverlay {
+#homepageOverlay {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -41,7 +41,6 @@ video, .med {
 	height: 100vh;
 	background-color: #FFFFFF;
 	opacity: 0.7;
-
 }
 
 
@@ -172,7 +171,7 @@ video, .med {
 .active {
 	color: white;
 }
-a:hover {
+.tracks a:hover {
 	color: white; 
 }
 
@@ -222,6 +221,7 @@ a:hover {
 	padding-top: 1vh;
 	top: 22vw;
 	left: 40vw;
+	width: 20vw;
 
 }
 
