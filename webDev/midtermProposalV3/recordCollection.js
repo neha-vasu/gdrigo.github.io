@@ -45,7 +45,7 @@ function homepageAnimations() {
     }, 90);
 
   //open recordslist.html
-  setTimeout(function(){ window.location.href = "recordslist.html"; }, 1900);
+  setTimeout(function(){ window.location.href = "recordslist.html"; }, 1800);
 }
 
 
@@ -129,25 +129,13 @@ function playSong(songNum, album) {
   // setActive(songNum);
 }
 
-//sets all tracks on a page to not active(colored grey)
-function unactiveAll() {
-  let tracks = document.getElementsByClassName('track');
-  for (var i=0; i<tracks.length; i++) {
-    tracks[i].style.color = "grey";
-  }
-}
-
 //sets specified track to white
-// function setActive(trackNum) {
-//   let tracks = document.getElementsByClassName('track');
-//   tracks[parseInt(trackNum)-1].style.color = "white";
-// }
-
 function highlightTrack(trackNum) {
   let tracks = document.getElementsByClassName('track');
   tracks[parseInt(trackNum)-1].style.color = "white";
 }
 
+//sets specifed track to grey
 function greyoutTrack(trackNum) {
   let tracks = document.getElementsByClassName('track');
   tracks[parseInt(trackNum)-1].style.color = "grey";
