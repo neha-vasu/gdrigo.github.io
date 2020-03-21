@@ -1,35 +1,47 @@
 html {
   font-family: 'Bowlby One SC';
 }
+
+body {
+  background-image: url("assets/palmLeaves.png");
+}
+
 header {
 	text-align: center;  
   border: 10px solid #402000;
   width: 33vw;
   height: 7vw;
   margin-left: 34vw;
-  margin-top: -0.5vw;
+  margin-top: 1.5vw;
   background-image: url("assets/woodPanel.png");
   margin-bottom: 3vw;
-  font-size: 33px;
+  font-size: 2vw;
 }
 
-body {
-  background-image: url("assets/palmLeaves.png");
+.buttons {
+  display: grid;
+  grid-template-columns: 30vw  30vw;
+  grid-template-rows: 4vw;
+  grid-gap: 2vw;
+  margin-left: 18vw;
 }
 
 .weekButton {
   background-image: url("assets/woodPanel.png");
   font-family: 'Bowlby One SC';
-	border: 10px solid #402000;
-  width: 50vw;
-  height: 8vw;
-  margin-bottom: 1vw;
-  margin-left: 25vw;
+	border: 0.4vw solid #402000;
+  width: 30vw;
+  height: 4vw;
+  /*margin-bottom: 1vw;*/
+  /*margin-left: 25vw;*/
   color: black;
-  font-size: 60px;
+  font-size: 2vw;
 
 }
 
 .weekButton:hover {
-  background-image: url("assets/woodPanelFruit.png");
+  /*background-image: url("assets/woodPanelFruit.png");*/
+  z-index: 1;
+  transition-duration: 0.7s;
+  transform: scale(1.3);
 }
