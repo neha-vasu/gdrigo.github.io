@@ -15,7 +15,7 @@ body {
 	top: 5vh;
 	left: 25vw;
 	width: 50vw;
-
+	cursor: pointer;
 }
 
 video, .med {
@@ -42,7 +42,6 @@ video, .med {
 	background-color: #FFFFFF;
 	opacity: 0.7;
 }
-
 
 
 /*index.html ends*/
@@ -254,87 +253,84 @@ audio {
 }
 
 @media(max-width: 800px) {
-
-
  
- .albumGrid {
-	margin-top: 13vh;
-	display: grid;
-	grid-template-columns: 19vw 62vw 19vw;
-	grid-template-rows: 93vw;
-}
+	.albumGrid {
+		margin-top: 13vh;
+		display: grid;
+		grid-template-columns: 19vw 62vw 19vw;
+		grid-template-rows: 93vw;
+	}
 
- .recordColl {
-	display: grid;
-	grid-template-columns: repeat(2, 30vw);
-	grid-template-rows: repeat(3, 30vw);
-	grid-gap: 2vw;
-}
+	.recordColl {
+		display: grid;
+		grid-template-columns: repeat(2, 30vw);
+		grid-template-rows: repeat(3, 30vw);
+		grid-gap: 2vw;
+	}
 
-.recCover img {
-	width: 30vw;
-	z-index: 0;
-	padding: .1vw;
-}
+	.recCover img {
+		width: 30vw;
+		z-index: 0;
+		padding: .1vw;
+	}
 
-#artistNameSpace, #albumNameSpace {
-	color: white;
-	/*writing-mode: vertical-rl;*/
-	text-orientation: sideways;
-	text-align: center;
-	vertical-align: middle;
-	/*font-size: 100px;*/
-}
+	#artistNameSpace, #albumNameSpace {
+		color: white;
+		/*writing-mode: vertical-rl;*/
+		text-orientation: sideways;
+		text-align: center;
+		vertical-align: middle;
+		/*font-size: 100px;*/
+	}
 
-.recordCovWithDisc {
-    position: fixed; 
-    top: 0;
-    left: 25vw;
-    text-align: center;
-    font-size: 4vh;
-}
+	.recordCovWithDisc {
+	    position: fixed; 
+	    top: 0;
+	    left: 25vw;
+	    text-align: center;
+	    font-size: 4vh;
+	}
 
-.recordCovWithDisc img{
-	height: 50vw;
-	width: 50vw;
-}
+	.recordCovWithDisc img{
+		height: 50vw;
+		width: 50vw;
+	}
 
-.audioPlayer {
-	position: fixed;
-	padding-top: 1vh;
-	top: 52vw;
-	left: 25vw;
-	width: 20vw;
-}
+	.audioPlayer {
+		position: fixed;
+		padding-top: 1vh;
+		top: 52vw;
+		left: 25vw;
+		width: 20vw;
+	}
 
-.tracks {
-	text-align: center;
-	margin-top: 67vw;
-	left: 27vw;
-	font-size: 3.5vw;
-	overflow: scroll;
-}
+	.tracks {
+		text-align: center;
+		margin-top: 67vw;
+		left: 27vw;
+		font-size: 3.5vw;
+		overflow: scroll;
+	}
 
-.backButton img{
-    position: fixed;
-    top: 1vw;
-    left: 1vw; 
-    width: 5vw;
-    z-index: 2;
-}
+	.backButton img{
+	    position: fixed;
+	    top: 1vw;
+	    left: 1vw; 
+	    width: 5vw;
+	    z-index: 2;
+	}
 
-.backGrid {
-	position: fixed;
-	padding: 2vw;
-    top: 3vw;
-    left: 0vw; 
-	display: grid;
-	grid-template-columns: repeat(4, 24vw);
-	grid-template-rows: repeat(4, 25vh);    
-	z-index: 0;
-}
+	.backGrid {
+		position: fixed;
+		padding: 2vw;
+	    top: 3vw;
+	    left: 0vw; 
+		display: grid;
+		grid-template-columns: repeat(4, 24vw);
+		grid-template-rows: repeat(4, 25vh);    
+		z-index: 0;
+	}
 
- 
 }
 
 
