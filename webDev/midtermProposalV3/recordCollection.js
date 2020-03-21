@@ -98,6 +98,7 @@ function addStyling(artistOrAlbumText, textColor) {
   } else {
    artistOrAlbumText.style.fontSize = "4vw";
   }
+  //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_matchmedia
 
   // artistOrAlbumText.style.fontSize = "4vw";
 }
