@@ -106,7 +106,7 @@ video, .med {
     top: 0vw;
     left: 0vw; 
 	display: grid;
-	grid-template-columns: 19vw 62vw 19vw;
+	grid-template-columns: 18.5vw 62vw 18.5vw;
 	grid-template-rows: 80vh auto 80vh;
 	z-index: 1;
 	text-align: center;
@@ -242,8 +242,7 @@ video, .med {
 	margin-top: 27vw;
 	left: 27vw;
 	font-size: 2.5vw;
-	overflow: scroll;
-	overflow-x: none;
+	overflow-x: hidden;
 }
 
 
@@ -257,7 +256,7 @@ audio {
 	.albumGrid {
 		margin-top: 13vh;
 		display: grid;
-		grid-template-columns: 19vw 62vw 19vw;
+		grid-template-columns: 18.5vw 62vw 18.5vw;;
 		grid-template-rows: 93vw;
 	}
 
@@ -309,7 +308,7 @@ audio {
 		margin-top: 67vw;
 		left: 27vw;
 		font-size: 3.5vw;
-		overflow: scroll;
+		overflow-x: hidden;
 	}
 
 	.backButton img{
@@ -326,7 +325,7 @@ audio {
 	    top: 3vw;
 	    left: 0vw; 
 		display: grid;
-		grid-template-columns: repeat(4, 24vw);
+		grid-template-columns: repeat(4, 23vw);
 		grid-template-rows: repeat(4, 25vh);    
 		z-index: 0;
 	}
