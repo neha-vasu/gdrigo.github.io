@@ -4,6 +4,7 @@ function homepageAnimations() {
   let disc = document.getElementById("homepageDisc");
   let whiteFilm = document.getElementById("homepageOverlay");
   
+  //fades out disc on homepage
   let fadeDisc = setInterval(function () {
         if (!disc.style.opacity) {
             disc.style.opacity = 1;
@@ -15,6 +16,7 @@ function homepageAnimations() {
         }
     }, 5);
 
+  //fades out white overalay on homepage
   let fadeOverlay = setInterval(function () {
         if (!whiteFilm.style.opacity) {
             whiteFilm.style.opacity = 0.7;
@@ -25,7 +27,9 @@ function homepageAnimations() {
             clearInterval(fadeOverlay);
         }
     }, 20);
+  //adapted from code on https://stackoverflow.com/questions/2060539/javascript-fade-element-from-specidied-opacity-to-specified-opacity?noredirect=1&lq=1
 
+  //reduces the blur of album covers on the homepage
   let recCovers = document.getElementsByClassName("recCover");
   let fadeRecCovers = setInterval(function () {
         if (!recCovers[0].style.filter) {
@@ -50,7 +54,7 @@ function homepageAnimations() {
 
 
 
-//FOR all audioTags
+//For all audioTags
 function setVolume() {
   let audioTag = document.getElementById('audioTag');
   audioTag.volume = 0.2;
@@ -99,10 +103,9 @@ function addStyling(artistOrAlbumText, textColor) {
    artistOrAlbumText.style.fontSize = "4vw";
   }
   //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_matchmedia
-
-  // artistOrAlbumText.style.fontSize = "4vw";
 }
 
+//removed album and artist name from the sides of the screen
 function removeDetails() {
   let artistNS = document.getElementById("artistNameSpace");
   let albumNS = document.getElementById("albumNameSpace");
