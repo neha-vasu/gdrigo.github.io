@@ -1,0 +1,99 @@
+#firstButton {
+	width: 10vw;
+	height: 10vw;
+	margin-left: 34vw;
+	border-radius: 90px;
+}
+
+body {
+  background-color: lightblue;
+  font-family: 'Nunito', sans-serif;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  padding-left: 10vw;
+  padding-right: 9vw;
+}
+
+.face {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  padding-left: 5vw;
+  padding-right: 2vw;
+  background-color: #4fc02f;
+  border: 10px solid #44962d;
+  border-radius: 33%;
+  height: 15vw;
+  width: 40vw;
+}
+
+.glasses {
+  display: inline-block;
+  visibility: hidden;
+  /*background-color: black;*/
+}
+
+.lens {
+  border: 10px solid rgba(255, 255, 255, .7);
+  border-radius: 33%;
+  width: 6vw;
+  height: 5vw;
+}
+
+.arm {
+  border: 10px solid rgba(255, 255, 255, .7);
+  width: 4vw;
+}
+
+#bridgePiece {
+  border: 10px solid rgba(255, 255, 255, .7);
+}
+
+.pupil{
+  border-radius: 100%;
+  width: 1vw;
+}
+
+.eye {
+  border: solid 10px;
+  border-radius: 55px;
+  background-color: rgba(255,255,255);
+  margin-top: 1vw;
+  margin-left: 0.5vw;
+  visibility: visible !important; 
+}
+
+.eye div {
+  border: solid 15px;
+}
+
+#midLens {
+	margin-top: -2vw;
+}
+
+.noseBridge {
+  border: 10px solid rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0);
+  height: 8vw;
+  width: 1vw;
+  margin-left: 23vw;
+}
+
+.noseHoriz {
+  border: 10px solid rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0);
+  height: 2vw;
+  width: 4vw;
+  margin-left: 20vw;
+}
+
+.lips {
+  border: 10px solid rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0);
+  height: 3vw;
+  width: 30vw;
+  margin-left: 3vw;
+  border-radius: 30%;
+}
+
+
+
