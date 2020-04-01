@@ -29,7 +29,6 @@ body {
 .glasses {
   display: inline-block;
   visibility: hidden;
-  /*background-color: black;*/
 }
 
 .lens {
