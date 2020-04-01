@@ -1,5 +1,3 @@
-console.log("the message!");
-
 const theButton = document.querySelector("#firstButton");
 const theTxt = document.querySelector("h2");
 
@@ -10,9 +8,9 @@ function isClicked() {
 
 }
 
-
 const glassesFrame = document.querySelectorAll(".glasses");
 const face = document.querySelector(".face");
+
 theButton.addEventListener("dblclick", doubledClicked);
 function doubledClicked() {
   theButton.style.backgroundColor = "blue";
@@ -23,36 +21,30 @@ function doubledClicked() {
   }
 }
 
-// const eye = document.querySelectorAll(".eye");
 const eyes = document.querySelectorAll(".eye");
 const mouth = document.querySelector(".mouth");
 
-mouth.addEventListener("mouseover", hovered);
-// eye.addEventListener("hover", hovered);
 for (let i=0; i<eyes.length; i++) {  
-    eyes[i].addEventListener("mouseover", hovered);
-  }
+    eyes[i].addEventListener("mouseover", onEye);
+    eyes[i].addEventListener("mouseout", offEye);
+}
+mouth.addEventListener("mouseover", onMouth);
+mouth.addEventListener("mouseout", offMouth);
 
-function hovered(){
-  mouth.style.transform = "scale(1.5)";
+function onEye(){
   for (let i=0; i<eyes.length; i++) {  
-    // eyes[i].style.transform = "scale(1.5)";
     eyes[i].style.backgroundColor = "pink";
   }
 }
-function unhovered(){
-  mouth.style.transform = "scale(1.5)";
+function offEye(){
   for (let i=0; i<eyes.length; i++) {  
-    // eyes[i].style.transform = "scale(1.5)";
     eyes[i].style.backgroundColor = "white";
   }
 }
 
-
-mouth.addEventListener("mouseout", off);
-
-function off(){
+function onMouth(){
+  mouth.style.transform = "scale(1.3)";
+}
+function offMouth(){
   mouth.style.transform = "scale(1)";
 }
-
-
