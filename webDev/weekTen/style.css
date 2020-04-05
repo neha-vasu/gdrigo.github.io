@@ -1,0 +1,67 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-image: url("assets/homebackground.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: auto;
+}
+
+.title {
+	font-size: 18vh;
+	width: 60vw;
+	line-height: 2vh;
+	z-index: 1;
+}
+
+.titlePiece {
+	font-weight: 900;
+}
+
+.bodypart {
+	z-index: 2;
+	/*border: 2px solid red;*/
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0.5;
+	 background-image: radial-gradient(farthest-corner at 30vw 20vh, #707070 0%, #707070 15%);
+}
+
+.eye {
+	position: absolute;
+	top: 15vh;
+	left: 33vw;
+	height: 13vh;
+	width: 8vw;
+}
+
+.nose {
+	position: absolute;
+	top: 2vh;
+	left: 47vw;
+	height: 27vh;
+	width: 20vw;
+}
+
+.ear {
+	position: absolute;
+	top: 47vh;
+	left: 21vw;
+	height: 27vh;
+	width: 37vw;
+}
+
+.mouth {
+	position: absolute;
+	top: 17vh;
+	left: 72vw;
+	height: 41vh;
+	width: 17vw;
+}
