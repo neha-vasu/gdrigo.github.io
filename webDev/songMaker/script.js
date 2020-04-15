@@ -48,6 +48,7 @@ function addToSong(soundName) {
 //iterates through the song array playing each sound
 function playSong() {
 	for (let i=0; i<song.length; i++) {
+		song[i].play();
 		// delay(song[i].duration); //supposed to prevent next sounds from playing simultaneously 
 	}
 }
