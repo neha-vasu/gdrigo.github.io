@@ -1,0 +1,115 @@
+html {
+	font-family: 'Bungee', cursive;
+}
+
+body {
+	display: flex;
+	background-color: darkred;
+}
+
+p {
+	color: white;
+	text-align: center;
+	padding-left: 1vw;
+	font-size: 1.5vw;
+	opacity: 0.6;
+}
+
+
+.audioPlayer {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 20vw;
+	margin-left: 40vw;
+	margin-top:15vh;
+}
+
+#audioTag {
+	/*position: absolute;*/
+	/*top:0;
+	left:0;*/
+	width: 20vw;
+/*	margin-left: 5vw;
+	padding-top:20vh;*/
+	opacity: 0.6;
+}
+
+@media(max-width: 1200px) {
+ 	p {
+		font-size: 2vh;
+	}
+ 	.audioPlayer, #audioTag {
+		width: 30vw;
+	}
+	#audioTag {
+		opacity: 0.6;
+	}
+}
+
+@media(max-width: 800px) {
+ 	p {
+		font-size: 2vh;
+	}
+ 	.audioPlayer, #audioTag {
+		width: 50vw;
+	}
+	#audioTag {
+		opacity: 0.6;
+	}
+}
+
+@media(max-width: 700px) {
+ 	p {
+		font-size: 2vh;
+	}
+ 	.audioPlayer, #audioTag {
+		width: 50vw;
+	}
+	#audioTag {
+		opacity: 0.6;
+	}
+}
+
+@media(max-width: 600px) {
+ 	p {
+		font-size: 2vh;
+	}
+ 	.audioPlayer, #audioTag {
+		width: 50vw;
+	}
+	#audioTag {
+		opacity: 0.6;
+	}
+}
+
+
+@media(max-width: 500px) {
+ 	p {
+		font-size: 2vh;
+	}
+ 	.audioPlayer, #audioTag {
+		width: 50vw;
+	}
+	#audioTag {
+		opacity: 0.6;
+	}
+}
+
+
+@media(max-width: 450px) {
+	p {
+		font-size: 2vh;
+	}
+ 	.audioPlayer, #audioTag {
+		width: 70vw;
+	}
+	#audioTag {
+		opacity: 0.6;
+	}
+}
+
+
+
+
+
