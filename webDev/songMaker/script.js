@@ -1,15 +1,15 @@
-console.log("Testing testing 123");
-
 let song = []; //will hold all sounds the user adds to song
 
-//ADD SOUNDS HERE
-const monkey = new Audio("assets/sounds/monkeyCry.mp3");
-monkey.duration = 4300; //must include this line for any new sounds added. Holds the length of the sound in milliseconds
+// Constructor function for Sound objects
+function Sound(audio="", duration=0, buttonID="") {
+  this.audio = new Audio(audio);
+  this.duration = duration;
+  this.buttonID = buttonID;
+}
 
-const bird = new Audio("assets/sounds/birds.mp3");
-bird.duration = 4552;
-
-
+//Create Sound objects
+var monkey = new Sound("assets/sounds/monkeyCry.mp3", 4300, "#monkeyButton");
+var bird = new Sound("assets/sounds/birds.mp3", 4552, "#birdButton");
 
 
 //Adding single click actions. 
@@ -31,24 +31,30 @@ $('#birdButton').dblclick(function() {
 });
 
 
-
 //FUNCTONS
 
 //plays specificed sound
-function playSound(soundName) {
-	soundName.play();
-	//add in time delay to prevent other sounds from playing simultaneously
+function playSound(sound) {
+	sound.audio.play();
 }
 
 //adds sound to song array
-function addToSong(soundName) {
-	song.push(soundName);
+function addToSong(sound) {
+	song.push(sound);
 }
 
-//iterates through the song array playing each sound
+
+let delayBeforePlaying; //amount of time before each sound starts to play...will hold duration of prev sound in the sequence
 function playSong() {
-	for (let i=0; i<song.length; i++) {
-		song[i].play();
-		// delay(song[i].duration); //supposed to prevent next sounds from playing simultaneously 
+	//iterates through song array playing each sound
+	for (let i =0; i<song.length; i++) { 
+	    if(!song[i-1]) { //this is the first sound in song so we want a delay of 0
+	    	setTimeout(function(){playSound(song[i])}, 0);
+	    	delayBeforePlaying = 0; // resets this variable each time the song starts
+	    }
+	    else {
+	    	delayBeforePlaying = delayBeforePlaying + song[i-1].duration; //updates the amount of time to delay before playing the next song..equal to the total length of all the previous sounds combined
+	    	setTimeout(function(){playSound(song[i])}, delayBeforePlaying);
+	    }
 	}
 }
