@@ -1,4 +1,41 @@
 body {
 background-color: green;
-padding: 3vw;
+padding: 2vw;
+}
+
+.soundIconGrid {
+	display: grid;
+	/*padding-top: 13vh;*/
+	grid-template-columns: repeat(10, 7.5vw);
+	grid-template-rows: repeat(5, 7.5vw);
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-bottom: 2vh;
+}
+
+
+
+/*.soundIcon {
+	background-color: white;
+	opacity: 0.3;
+}*/
+
+.staff {
+	display: grid;
+	grid-template-columns: 7.5vw 50vw;
+	grid-template-rows: repeat(1, 7.5vw);
+	padding-left: 10vw;
+	padding-right: 10vw;
+	background-image: url("assets/icons/staff.png");
+}
+
+.staff img {
+	height: 7.5vw;
+	/*height: 7.5vw;*/
+}
+
+
+ #notes li {
+ 	display: inline;
+ 	list-style: none;
 }
