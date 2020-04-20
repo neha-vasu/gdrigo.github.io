@@ -27,6 +27,8 @@ padding: 2vw;
 	padding-left: 10vw;
 	padding-right: 10vw;
 	background-image: url("assets/icons/staff.png");
+	background-repeat: repeat-x;
+	background-size: 20vw;
 }
 
 .staff img {
